@@ -23,22 +23,22 @@ const LandingPage = () => {
 
         <div className="feature-grid">
           <div className="feature-box">
-            <h3>🚚 Fast Delivery</h3>
+            <h3>Fast Delivery</h3>
             <p>Quick and safe delivery to your home</p>
           </div>
 
           <div className="feature-box">
-            <h3>💳 Secure Payment</h3>
+            <h3>Secure Payment</h3>
             <p>Your payments are safe with us</p>
           </div>
 
           <div className="feature-box">
-            <h3>🎁 Best Quality</h3>
+            <h3>Best Quality</h3>
             <p>We provide high quality products</p>
           </div>
 
           <div className="feature-box">
-            <h3>💬 24/7 Support</h3>
+            <h3>24/7 Support</h3>
             <p>We are always here to help you</p>
           </div>
         </div>
