@@ -4,7 +4,7 @@ import "../assets/style/LandingPage.css";
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <div className="hero">
+      <div className="main">
         <h1>Welcome to StoreShop</h1>
         <p>Discover amazing products at unbeatable prices</p>
 
@@ -13,7 +13,7 @@ const LandingPage = () => {
             Products
           </Link>
           <Link to="/about-us" className="btn secondary">
-            About Us
+            Contact Us
           </Link>
         </div>
       </div>

@@ -33,10 +33,10 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to={"/about-us"}
+            to={"/contact-us"}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            About Us
+            Contact Us
           </NavLink>
         </li>
       </ul>

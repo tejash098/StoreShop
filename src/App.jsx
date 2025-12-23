@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import Products from './Components/Pages/Products'
 import Footer from './Components/Footer'
+import AddProducts from './Components/Pages/AddProducts'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/products' element={<Products/>}/>
+        <Route path='/add-product' element={<AddProducts/>}/>
       </Routes>
       <Footer/>
     </>
