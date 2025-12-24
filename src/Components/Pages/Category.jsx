@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../assets/style/Category.css";
+import axios from "axios";
 
 const Category = () => {
   const [apiData, setApiData] = useState([]);
@@ -26,6 +27,17 @@ const Category = () => {
     fetchApiData();
   }, []);
 
+  const hdlDelete = async (id) => {
+    let confirmRes = window.confirm('Item will be Deleted permanently')
+    if (confirmRes) {
+      await axios.delete(`http://localhost:4000/products/${id}`);
+      alert('Item deleted Successfully')
+    }
+    else{
+      alert('Item not deleted')
+    }
+  }
+
   return (
     <>
       <div className="category-header">
@@ -36,7 +48,10 @@ const Category = () => {
           <li onClick={hdlCategory}>women's clothing</li>
         </ul>
       </div>
-      <h2 style={{margin:'2vh'}}>Category : {Category}</h2>
+      <div className="prodinfo">
+        <h2>Category : {Category}</h2>
+        <h2>Available : {filteredProducts.length}</h2>
+      </div>
       <div className="prod-grid">
         {filteredProducts.map((elem) => {
           let { title, id, price, description, image } = elem;
@@ -50,7 +65,7 @@ const Category = () => {
               </div>
               <div className="btns">
                 <button>Add to Cart</button>
-                <button>Delete</button>
+                <button onClick={(id)=>hdlDelete(id)}>Delete</button>
               </div>
             </div>
           );
