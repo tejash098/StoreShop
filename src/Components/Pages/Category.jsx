@@ -11,7 +11,7 @@ const Category = () => {
     const response = await fetch("http://localhost:4000/products");
     const data = await response.json();
     setApiData(data);
-    setFilteredProducts(data)
+    setFilteredProducts(data);
   };
 
   const hdlCategory = (e) => {
@@ -28,15 +28,33 @@ const Category = () => {
   }, []);
 
   const hdlDelete = async (id) => {
-    let confirmRes = window.confirm('Item will be Deleted permanently')
+    console.log(id);
+    
+    let confirmRes = window.confirm("Item will be Deleted permanently");
     if (confirmRes) {
       await axios.delete(`http://localhost:4000/products/${id}`);
-      alert('Item deleted Successfully')
+      alert("Item deleted Successfully");
+      fetchApiData();
+    } else {
+      alert("Item not deleted");
     }
-    else{
-      alert('Item not deleted')
+  };
+
+  const hdlAddToCart = async (id) => {
+    let cardData = filteredProducts.filter((elem)=>elem.id === id);
+
+    let cnfAdd = window.confirm('Confirm item before adding')
+    if (cnfAdd){
+      fetch("http://localhost:4000/cart-items", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(cardData[0]),
+      })
     }
-  }
+    alert("Item added to cart");
+  };
 
   return (
     <>
@@ -64,8 +82,8 @@ const Category = () => {
                 <p>{description}</p>
               </div>
               <div className="btns">
-                <button>Add to Cart</button>
-                <button onClick={(id)=>hdlDelete(id)}>Delete</button>
+                <button onClick={() => hdlAddToCart(id)}>Add to Cart</button>
+                <button onClick={() => hdlDelete(id)}>Delete</button>
               </div>
             </div>
           );

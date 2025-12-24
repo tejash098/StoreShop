@@ -1,0 +1,40 @@
+.cart-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 2vh;
+  padding: 2vh 2vw;
+  .cart-item {
+    display: flex;
+    gap: 2vw;
+    background-color: #444;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: white;
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+    .item-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1vh;
+      h2 {
+        margin: 0;
+      }
+      .item-actions {
+        display: flex;
+        gap: 1vw;
+        button {
+          background-color: #ffcc00;
+          border: none;
+          padding: 1vh 1vw;
+          cursor: pointer;
+          border-radius: 8px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

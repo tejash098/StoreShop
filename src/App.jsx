@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Products from './Components/Pages/Products'
 import Footer from './Components/Footer'
 import AddProducts from './Components/Pages/AddProducts'
+import CartItems from './Components/Pages/CartItems'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/' element={<LandingPage />} />
         <Route path='/products' element={<Products/>}/>
         <Route path='/add-product' element={<AddProducts/>}/>
+        <Route path='/cart' element={<CartItems/>}/>
       </Routes>
       <Footer/>
     </>

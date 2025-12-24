@@ -25,10 +25,10 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to={"/add-product"}
+            to={"/cart"}
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            Add Products
+            Cart
           </NavLink>
         </li>
         <li>
