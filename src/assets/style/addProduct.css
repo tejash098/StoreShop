@@ -18,7 +18,7 @@
       gap: 25px;
     }
     input,
-    select {
+    select, textarea {
       padding: 2vh 1vw;
       font-size: 16px;
       border: 1px solid #ccc;

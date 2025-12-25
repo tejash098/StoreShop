@@ -31,7 +31,7 @@ const CartItems = () => {
     <>
       <div className="cart-container">
         {CartData.map((elem) => {
-          let { id, title, price, category, image } = elem;
+          let { id, title, price, category, image, rating } = elem;
           return (
             <div className="cart-item" key={elem.id}>
               <img src={image} alt={title} />
@@ -49,6 +49,7 @@ const CartItems = () => {
                   </span>
                 </div>
                 <p className="item-price">Price: ${price}</p>
+                <p>Rating: {rating.rate} ⭐</p>
                 <div className="item-actions">
                   <button
                     className="remove-button"
