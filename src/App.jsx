@@ -15,10 +15,10 @@ const App = () => {
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/products' element={<Products/>}/>
-        <Route path='/add-product' element={<AddProducts/>}/>
+        <Route path='/addproducts' element={<AddProducts/>}/>
         <Route path='/cart' element={<CartItems/>}/>
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )
 }
