@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../assets/style/CartItem.css";
+import AddBoxIcon from "@mui/icons-material/AddBox";
+import IndeterminateCheckBoxIcon from "@mui/icons-material/IndeterminateCheckBox";
 
 const CartItems = () => {
   const [CartData, setCartData] = useState([]);
@@ -35,8 +37,18 @@ const CartItems = () => {
               <img src={image} alt={title} />
               <div className="item-details">
                 <h3>{title}</h3>
-                <p className="item-price">Price: ${price}</p>
                 <p className="item-category">Category: {category}</p>
+                <div className="quantity">
+                  Quantity:
+                  <span>
+                    <IndeterminateCheckBoxIcon />
+                  </span>
+                  {1}
+                  <span>
+                    <AddBoxIcon />
+                  </span>
+                </div>
+                <p className="item-price">Price: ${price}</p>
                 <div className="item-actions">
                   <button
                     className="remove-button"
