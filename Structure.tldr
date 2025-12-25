@@ -60,16 +60,58 @@
 			"typeName": "binding"
 		},
 		{
-			"x": 69.08352307957794,
-			"y": 268.90939889368894,
+			"x": 163.98526932767203,
+			"y": 234.70927883750255,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:bt33rsfwCSTtXswcw30R6",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 518.6004638671875,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Install axios for api methods (get & post)"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aCUgTpVl",
+			"typeName": "shape"
+		},
+		{
+			"x": 148.992800945618,
+			"y": 181.00919920609022,
 			"z": 0.7508515239740472,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"x": 629.7010418372635,
-			"y": 188.25555820854893,
+			"x": 571.850057171084,
+			"y": 164.2798090645339,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -113,9 +155,9 @@
 			"editingShapeId": null,
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:X5tbb1m3iIKFnp4fpnSl-"
+				"shape:bt33rsfwCSTtXswcw30R6"
 			],
-			"hoveredShapeId": "shape:X5tbb1m3iIKFnp4fpnSl-",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -243,8 +285,50 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 514.2927924759338,
-			"y": 200.03190299648,
+			"x": 31.575991224655866,
+			"y": 245.3668563282261,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:MI59zveOflEDVLEbGB8Am",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 95.31919860839844,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Step 4: "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aBHyuWQV",
+			"typeName": "shape"
+		},
+		{
+			"x": 456.4418078097544,
+			"y": 176.05615385246497,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -433,7 +517,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "move",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -472,8 +556,8 @@
 			"typeName": "instance"
 		},
 		{
-			"x": 60.90319109956306,
-			"y": 187.07793379255654,
+			"x": 3.052206433383674,
+			"y": 163.1021846485415,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -558,8 +642,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 202.4402573454313,
-			"y": 183.30579229949822,
+			"x": 144.5892726792519,
+			"y": 159.3300431554832,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
