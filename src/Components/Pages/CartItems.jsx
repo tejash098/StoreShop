@@ -30,39 +30,41 @@ const CartItems = () => {
   return (
     <>
       <div className="cart-container">
-        {CartData.map((elem) => {
-          let { id, title, price, category, image, rating } = elem;
-          return (
-            <div className="cart-item" key={elem.id}>
-              <img src={image} alt={title} />
-              <div className="item-details">
-                <h3>{title}</h3>
-                <p className="item-category">Category: {category}</p>
-                <div className="quantity">
-                  Quantity:
-                  <span>
-                    <IndeterminateCheckBoxIcon />
-                  </span>
-                  {1}
-                  <span>
-                    <AddBoxIcon />
-                  </span>
-                </div>
-                <p className="item-price">Price: ${price}</p>
-                <p>Rating: {rating.rate} ⭐</p>
-                <div className="item-actions">
-                  <button
-                    className="remove-button"
-                    onClick={() => hdlRemove(id)}
-                  >
-                    Remove
-                  </button>
-                  <button className="checkout-button">Checkout</button>
+        <div className="cart-grid">
+          {CartData.map((elem) => {
+            let { id, title, price, category, image, rating } = elem;
+            return (
+              <div className="cart-item" key={elem.id}>
+                <img src={image} alt={title} />
+                <div className="item-details">
+                  <h3>{title}</h3>
+                  <p className="item-category">Category: {category}</p>
+                  <div className="quantity">
+                    Quantity:
+                    <span>
+                      <IndeterminateCheckBoxIcon />
+                    </span>
+                    {1}
+                    <span>
+                      <AddBoxIcon />
+                    </span>
+                  </div>
+                  <p className="item-price">Price: ${price}</p>
+                  <p>Rating: {rating.rate} ⭐</p>
+                  <div className="item-actions">
+                    <button
+                      className="remove-button"
+                      onClick={() => hdlRemove(id)}
+                    >
+                      Remove
+                    </button>
+                    <button className="checkout-button">Checkout</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </>
   );

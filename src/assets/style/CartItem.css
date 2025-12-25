@@ -1,4 +1,7 @@
-.cart-container {
+.cart-container{
+  min-height: 83.5vh;
+  .cart-grid {
+  
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 2vh;
@@ -43,6 +46,7 @@
       }
     }
   }
+}
 }
 @media screen and (max-width: 1000px) {
   .cart-container {
