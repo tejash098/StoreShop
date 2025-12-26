@@ -12,7 +12,7 @@ const LandingPage = () => {
           <Link to="/products" className="btn primary">
             Products
           </Link>
-          <Link to="/about-us" className="btn secondary">
+          <Link to="/contactus" className="btn secondary">
             Contact Us
           </Link>
         </div>

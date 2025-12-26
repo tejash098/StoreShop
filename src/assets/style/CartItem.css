@@ -1,5 +1,14 @@
 .cart-container{
   min-height: 83.5vh;
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 2vw;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+  } 
   .cart-grid {
   
   display: grid;

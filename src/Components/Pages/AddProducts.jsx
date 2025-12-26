@@ -33,6 +33,25 @@ const AddProducts = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(FormData);
+    fetch("http://localhost:4000/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(FormData),
+    }).then(() => {
+      alert("Product added successfully");
+      setFormData({
+        title: "",
+        price: "",
+        description: "",
+        category: "",
+        image: "",
+        rating: { rate: "", count: "" },
+      });
+    }).catch((e)=>{
+      alert("Error in adding product",e)
+    })
   };
 
   return (
